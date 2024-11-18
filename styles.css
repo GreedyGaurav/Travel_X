@@ -1,0 +1,269 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("img/landing.jpg") no-repeat center center/cover;
+  color: white;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.logo {
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.menu a:hover {
+  color: indianred;
+}
+.register a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: indianred;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.register a:hover {
+  background: transparent;
+  border: 1px solid indianred;
+}
+.h-txt {
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.h-txt span {
+  font-size: 1.2em;
+  letter-spacing: 5px;
+}
+.h-txt h1 {
+  font-size: 3.5em;
+  margin-top: 10px;
+}
+.h-txt a {
+  text-decoration: none;
+  background: indianred;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.h-txt a:hover {
+  background: transparent;
+  border: 2px solid indianred;
+}
+
+/* Hill Stations Section */
+.hill-stations {
+  background: #f3f3f3;
+  color: #333;
+  padding: 40px 20px;
+}
+.hill-stations h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.hill-stations p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 300px;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card .content {
+  padding: 20px;
+  text-align: center;
+}
+.card h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+.card a {
+  text-decoration: none;
+  background: indianred;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.card a:hover {
+  background: #333;
+}
+
+/* Best Offers Section */
+.best-offers {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+.best-offers h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.best-offers p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #555;
+}
+.offers {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.offer {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  text-align: left;
+  width: 300px;
+}
+.offer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.offer img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.offer h3 {
+  font-size: 1.5em;
+  margin: 15px;
+}
+.offer p {
+  margin: 15px;
+  color: #555;
+}
+.offer a {
+  display: block;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background: indianred;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.offer a:hover {
+  background: #333;
+}
+
+/* Contact Section */
+.contact {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+form {
+  width: 100%;
+  max-width: 500px;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  background: indianred;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #333;
+}
+.contact-info {
+  max-width: 400px;
+  text-align: left;
+}
+.contact-info h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+.contact-info p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: indianred;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #333;
+}
